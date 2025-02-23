@@ -16,13 +16,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 body a {
-    color: #005b9e;
+    color: #1772d0;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 body a:hover {
