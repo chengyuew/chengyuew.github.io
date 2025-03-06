@@ -290,9 +290,12 @@ div.infoblock > div.blockcontent {
 }
 
 div.clustrmaps-container {
-            margin-top: 20px;
-            text-align: center;
-        }
+    text-align: center; 
+    margin-top: 20px; 
+    width: 30%; 
+    margin-left: auto;
+    margin-right: auto;
+}
 div.blockcontent p + ul, div.blockcontent p + ol {
 	margin-top: 0.4em;
 }
