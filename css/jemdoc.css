@@ -112,7 +112,7 @@ div.menu-item {
 
 div#toptitle {
 	padding-bottom: 0.2em;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.2em;
 	/*border-bottom: 3px double gray;*/
 }
 
@@ -181,7 +181,7 @@ h3 {
 
 p {
 	margin-top: 0.0em;
-	margin-bottom: 0.8em;
+	margin-bottom: 0.5em;
 	padding: 0;
 	line-height: 1.25;
 	font-size: 100%;
