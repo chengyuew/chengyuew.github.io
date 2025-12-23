@@ -35,7 +35,14 @@ body { padding : 0; font-family : Arial; font-size : 16px; background-color : rg
 #bio {
     padding-top : 20px;
 }
-#me { border : 0 solid black; margin-bottom : 50px; border-radius : 10px; }
+/* #me { border : 0 solid black; margin-bottom : 50px; border-radius : 10px; } */
+
+#me {
+  width: 250px;
+  height: 250px;          /* 关键：宽高一致 */
+  border-radius: 50%;     /* 变成圆形 */
+  object-fit: cover;     /* 防止图片被拉伸 */
+}
 #sidebar { margin-left : 25px; margin-right : 60px; border : 0 solid black; float : left; margin-bottom : 0;}
 a { text-decoration : none; }
 a:hover { text-decoration : underline; }
