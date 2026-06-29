@@ -1,306 +1,759 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chengyue Wang</title>
 
-<!-- Meta tags for search engines to crawl -->
-<meta name="robots" content="index,follow">
-<meta name="keywords" content="Chengyue Wang; University of Macau; UM; Autonomous Driving; Autonomous Vehicle; Transportation">
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.min.js"></script>
-<link rel="author" href="https://chengyuew.github.io/">
-<link rel="icon" href="./img/avatar.jpg" type="image/jpg">
-	<title>Chengyue Wang - Homepage</title>
-	<style>
+  <meta name="keywords" content="Chengyue, University of Macau" />
+  <meta name="description" content="Chengyue's home page" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <style>
+    :root{
+      --primary: #2563eb;
+      --accent: #2563eb;
+      --accent-light: rgba(37, 99, 235, 0.08);
+      --link: #2563eb;
+      --link-hover: #2563eb;
 
-@media screen and (max-device-width: 480px){
-  body{
-    -webkit-text-size-adjust: none;
-  }
-  .clustrmaps-container {
-    width: 90%;
-  }
-}
-p { font-size : 16px; }
-h1 { font-size : 34px; margin : 0; padding : 0; }
-h2 { font-size : 20px; margin : 0; padding : 0; }
-h3 { font-size : 18px; margin : 8; padding : 0; }
-h6 { font-size : 20px; margin : 8; padding : 0; border-bottom: 1px solid #aaaaaa; 	margin-bottom: 0.5em; padding-bottom: 0.5em;}
-body { padding : 0; font-family : Arial; font-size : 16px; background-color : rgb(224, 224, 224); }
-.title { width : 650px; margin : 20px auto; }
-.container { width : 850px; margin : 20px auto; border-radius: 10px;  background-color : #fff; padding : 20px;  clear:both;}
-.menu_container { width : 850px; margin : 20px auto; border-radius: 10px;  background-color : #fff; padding : 20px;  clear:both; text-align: center;}
-.container_title { width : 850px; margin : 20px auto; border-radius: 10px;  padding : 20px;  clear:both;}
-.iframe_video {float: left; margin-right: 30px}
-#bio {
-    padding-top : 20px;
-}
-/* #me { border : 0 solid black; margin-bottom : 50px; border-radius : 10px; } */
+      --text-main: #1a1a2e;
+      --text-body: #3d3d5c;
+      --text-muted: #7a7a8c;
 
-#me {
-  width: 250px;
-  height: 250px;          /* 关键：宽高一致 */
-  border-radius: 50%;     /* 变成圆形 */
-  object-fit: cover;     /* 防止图片被拉伸 */
-}
-#sidebar { margin-left : 25px; margin-right : 60px; border : 0 solid black; float : left; margin-bottom : 0;}
-a { text-decoration : none; }
-a:hover { text-decoration : underline; }
-a, a:visited { color : #4987fa; }
-.publogo { width: 100 px; margin-right : 20px; float : left; border : 0;}
-.publication { clear : left; padding-bottom : 0px; }
-.publication p { height : 100px; padding-top : 5px;}
-.publication strong a { color : #4987fa; }
-.publication .links { position : relative; top : 15px }
-.publication .links a { margin-right : 20px; }
-.codelogo { margin-right : 10px; float : left; border : 0;}
-.code { clear : left; padding-bottom : 10px; vertical-align :middle;} 
-.code .download a { display : block; margin : 0 15px; float : left;}
-.code strong a { color : #000; }
-.external a {     margin-left: 0; margin-right: 10px; }
-.external a.first { margin : 0 10px 0 0; }
-.clustrmaps-container {
-    text-align: center; 
-    margin-top: 20px; 
-    width: 30%; 
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;  background-color : #fff;
-}
+      --bg: #fafaf8;
+      --card: #ffffff;
+      --border: #e8e6e1;
+      --border-section: #d5d2cb;
 
-	</style>
-	<script async="" src="./homepage_files/analytics.js"></script>
+      --maxw: 860px;
+      --radius: 6px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+
+      --font-serif: 'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+
+      --lh: 1.7;
+    }
+
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: #141418;
+        --card: #1c1c22;
+        --border: #2e2e38;
+        --border-section: #3a3a48;
+
+        --text-main: #e8e6e1;
+        --text-body: #bbb8b0;
+        --text-muted: #7a7a8c;
+
+        --primary: #a8c4de;
+        --accent: #d4727e;
+        --accent-light: rgba(212,114,126,0.10);
+        --link: #8bb8d6;
+        --link-hover: #d4727e;
+
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.25);
+      }
+    }
+
+    *{ box-sizing: border-box; }
+    html{ scroll-behavior: smooth; }
+
+    body{
+      color: var(--text-body);
+      background: var(--bg);
+      font-family: var(--font-sans);
+      font-size: 15px;
+      margin: 0;
+      line-height: var(--lh);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container{
+      max-width: var(--maxw);
+      margin: 36px auto 64px auto;
+      padding: 0 28px;
+    }
+
+    /* ===== Links ===== */
+    a{
+      color: var(--link);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    a:hover{
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    /* ===== Typography ===== */
+    h1, h2, h3{
+      font-family: var(--font-serif);
+      color: var(--text-main);
+      margin: 0;
+      font-weight: 700;
+    }
+
+    h2{
+      margin-top: 32px;
+      margin-bottom: 14px;
+      font-size: 21px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border-section);
+      letter-spacing: -0.01em;
+    }
+
+    p{ font-size: 15px; margin-top: 0; margin-bottom: 12px; }
+    ul{ padding-left: 22px; margin: 8px 0 0 0; }
+    li{ margin-bottom: 7px; font-size: 15px; }
+
+    .muted{ color: var(--text-muted); font-size: 14px; }
+
+    /* ===== Hero ===== */
+    .hero{
+      display: grid;
+      grid-template-columns: 1fr 180px;
+      gap: 36px;
+      align-items: start;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-content{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .hero h1{
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .subtitle{
+      font-size: 15px;
+      color: var(--text-body);
+      line-height: 1.6;
+    }
+
+    .contact-info{
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .contact-info a{
+      color: var(--text-main);
+      font-weight: 600;
+    }
+    .contact-info a:hover{
+      color: var(--link-hover);
+    }
+
+    .social-links{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+    .social-links a{
+      color: var(--link);
+      font-weight: 600;
+      text-decoration: none;
+      padding-bottom: 1px;
+      border-bottom: 1px solid transparent;
+    }
+    .social-links a:hover{
+      color: var(--link-hover);
+      border-bottom-color: var(--link-hover);
+      text-decoration: none;
+    }
+
+    .job-badge{
+      display: inline-block;
+      padding: 5px 14px;
+      background: var(--accent-light);
+      border: 1px solid rgba(37, 99, 235,0.18);
+      border-left: 3px solid var(--accent);
+      color: var(--text-main);
+      border-radius: 3px;
+      font-size: 13px;
+      font-weight: 600;
+      width: fit-content;
+      margin-top: 6px;
+    }
+
+    .avatar{
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (max-width: 640px){
+      .hero{ grid-template-columns: 1fr; gap: 16px; }
+      .hero h1{ font-size: 26px; }
+      .avatar{ width: 140px; height: 140px; }
+    }
+
+    /* ===== Bio ===== */
+    .bio-text{
+      text-align: justify;
+      margin-top: 6px;
+    }
+
+    .research-interests{
+      margin: 4px 0 0 0;
+      padding-left: 22px;
+    }
+    .research-interests li{
+      margin-bottom: 4px;
+    }
+    .research-interests li strong{
+      color: var(--text-main);
+    }
+
+    /* ===== Education ===== */
+    .edu-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .edu-header strong{ color: var(--text-main); font-weight: 700; }
+    .edu-date{ color: var(--text-muted); font-size: 13px; font-style: italic; }
+
+    /* ===== News ===== */
+    .news-list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .news-list li{
+      display: flex;
+      gap: 16px;
+      align-items: baseline;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+      margin: 0;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .news-list li:last-child{ border-bottom: none; }
+    .news-date{
+      flex: 0 0 auto;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      min-width: 68px;
+      font-variant-numeric: tabular-nums;
+    }
+    .news-list li.news-hidden{ display: none; }
+    .news-toggle{
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--link);
+      border-radius: 4px;
+      padding: 5px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .news-toggle:hover{
+      background: var(--accent-light);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ===== Publications ===== */
+    .pub-list{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .pub-tabs{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: -4px 0 18px 0;
+    }
+    .pub-tab{
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text-muted);
+      border-radius: 4px;
+      padding: 5px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .pub-tab:hover{
+      border-color: var(--border-section);
+      color: var(--text-main);
+    }
+    .pub-tab.active{
+      color: var(--accent);
+      background: var(--accent-light);
+      border-color: rgba(139,35,50,0.20);
+    }
+    .pub-card.is-hidden{ display: none; }
+
+    .pub-card{
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 18px;
+      padding: 16px;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.15s;
+    }
+    .pub-card:hover{
+      border-color: var(--border-section);
+    }
+
+    .pub-img{
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    .pub-details{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .pub-title{
+      font-family: var(--font-serif);
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .pub-title a{
+      color: var(--text-main);
+      text-decoration: none;
+    }
+    .pub-title a:hover{
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    .pub-authors{
+      font-size: 13.5px;
+      color: var(--text-body);
+      margin-bottom: 5px;
+      line-height: 1.5;
+    }
+    .pub-authors strong{ color: var(--text-main); font-weight: 700; }
+
+    .pub-venue{
+      font-size: 13px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .badge{
+      display: inline-block;
+      vertical-align: middle;
+      padding: 2px 7px;
+      border-radius: 3px;
+      background: var(--accent-light);
+      border: 1px solid rgba(139,35,50,0.20);
+      color: var(--accent);
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-left: 6px;
+      letter-spacing: 0.05em;
+    }
+
+    .pub-links{
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 13px;
+    }
+    .pub-links a{
+      font-weight: 600;
+    }
+
+    @media (max-width: 640px){
+      .pub-card{ grid-template-columns: 1fr; }
+      .pub-img{ max-width: 280px; }
+    }
+
+    /* ===== Footer ===== */
+    .footer-widget{
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 2px solid var(--border-section);
+      text-align: center;
+    }
+    .footer-widget img{
+      max-width: 100%;
+      border-radius: 4px;
+      opacity: 0.85;
+      border: 1px solid var(--border);
+    }
+    .footer-widget img:hover{ opacity: 1; }
+
+    /* ===== Back to top ===== */
+    .to-top{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 98;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 4px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: var(--shadow-sm);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+    .to-top.show{
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .to-top:hover{
+      color: var(--accent);
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      *{ transition: none !important; scroll-behavior: auto !important; }
+    }
+  </style>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-137722442-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 <body>
 
+  <a class="to-top" href="#top" aria-label="Back to top">&uarr;</a>
+
+  <div class="container" id="top">
+
+    <section class="hero">
+      <div class="hero-content">
+        <div>
+          <h1>Chengyue Wang</h1>
+          <div class="subtitle">
+            Ph.D. Student, University of Macau<br>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          Email:
+          <a href="mailto:chengyue.wang@connect.um.edu.mo">chengyue.wang@connect.um.edu.mo</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://scholar.google.com/citations?hl=en&user=Fu1SRlwAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/chengyue-wang-67a458226/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+
+        <div class="job-badge">
+          Open to positions: Faculty / Postdoc / Research Scientist
+        </div>
+      </div>
+
+      <img class="avatar" src="./img/avatar.jpg" alt="Chengyue Wang" />
+    </section>
+
+    <h2 id="bio">About</h2>
+
+    <p class="bio-text">
+     👋 I am currently a final-year Ph.D. Student at State Key Laboratory of Internet of Things for Smart City, University of Macau (UM), advised by <a href='https://www.fst.um.edu.mo/personal/zhenningli/about/'>Prof. Zhenning Li.</a>             
+      Previously, I received my Bachelor's degree from Chang'an University and my Master's degree from the University of Illinois Urbana-Champaign (UIUC). 
+      Before joining UM, I was also fortunate to be mentored by <a href='https://superromanke.github.io/'>Prof. Ruimin Ke</a> and <a href='https://scholar.google.com/citations?user=8QbrSoQAAAAJ&hl=en'>Prof. Ruey (Kelvin) Cheu</a>. 
+      My current research interests lie in Autonomous Driving, World Model, and LLMs. 
+      On these topics, I have published 30+ papers in top-tier journals, including IEEE TPAMI and TR Part C, 
+      as well as at leading AI conferences such as CVPR and AAAI, with several selected for oral presentations.
+    </p>
+
+
+    <!-- <h2 id="news">News</h2>
+    <ul class="news-list" id="newsList">
+      <li><span class="news-date">2026.04</span> <span>One paper (ChainFed) accepted to <strong>ACL 2026</strong>.</span></li>
+      <li><span class="news-date">2026.03</span> <span>Attended AI Forum at <strong>CUHK(SZ)</strong> and <strong>SLAI</strong>, and received the <strong>Best Presentation Award</strong>.</span></li>
+      <li><span class="news-date">2026.02</span> <span>One paper (Floe) accepted to <strong>IEEE TPDS 2026</strong>.</span></li>
+      <li class="news-hidden"><span class="news-date">2026.01</span> <span>One survey paper on Federated LLM accepted to <strong>TMLR 2026</strong>.</span></li>
+      <li class="news-hidden"><span class="news-date">2026.01</span> <span>One survey paper on Federated LLM accepted to <strong>TMLR 2026</strong>.</span></li>
+      <li class="news-hidden"><span class="news-date">2026.01</span> <span>One survey paper on Federated LLM accepted to <strong>TMLR 2026</strong>.</span></li>
+      <li class="news-hidden"><span class="news-date">2026.01</span> <span>One survey paper on Federated LLM accepted to <strong>TMLR 2026</strong>.</span></li>
+      <li class="news-hidden"><span class="news-date">2026.01</span> <span>One survey paper on Federated LLM accepted to <strong>TMLR 2026</strong>.</span></li>
+      <li class="news-hidden"><span class="news-date">2026.01</span> <span>One survey paper on Federated LLM accepted to <strong>TMLR 2026</strong>.</span></li>
+    </ul>
+    <button class="news-toggle" id="newsToggle" type="button">Show more</button> -->
 
 
 
-    <div class="menu_container">
-        <h2>
-            <a href="./index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <!-- <a href="./research.html">Research</a>&nbsp;&nbsp;&middot;&nbsp; -->
-            <a href="./publications.html">Publications</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <!-- <a href="./softwares.html">Softwares</a>&nbsp;&nbsp;&middot;&nbsp;
-            <a href="./team.html">Team</a>&nbsp;&nbsp;&middot;&nbsp; -->
-            <a href="./Misc.html">Misc.</a>
-            <!-- <a href="./awards.html">Awards</a> -->
-        </h2>
+    <h2 id="publications">Selected Publications</h2>
+<p class="muted" style="margin-bottom: 22px;">
+  For a complete list of my publications, please refer to my
+  <a href="https://scholar.google.com/citations?hl=en&user=Fu1SRlwAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a> profile.
+</p>
+
+
+
+    <div class="pub-list">
+
+
+  <div class="pub-card">
+    <img class="pub-img" src="./img/TPAMI_2026_1.png" alt="TPAMI 2026" />
+    <div class="pub-details">
+      <div class="pub-title">
+        <a href="" target="_blank" rel="noopener">SWIFT: A Small-World Interaction Framework for Flow-Aware Trajectory Prediction in Autonomous Driving.</a>
+      </div>
+      <div class="pub-authors">
+        <strong>Chengyue Wang</strong>, Bin Rao, Haicheng Liao, Bonan Wang, Chengzhong Xu, Zhenning Li
+      </div>
+      <div class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026</div>
+      <!-- <div class="pub-tagline">“When one size doesn’t fit all, CLONE it to beat the edge latency!”</div> -->
+    </div>
+  </div>
+
+  <!-- <div class="pub-card">
+    <img class="pub-img" src="./img/COMMTR_2026.png" alt="AAP 2024" />
+    <div class="pub-details">
+      <div class="pub-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S0001457523004931" target="_blank" rel="noopener">
+          STAR: Structure-Aware Representation Learning for Efficient and Robust UAV-based Geo-Localization.
+        </a>
+      </div>
+      <div class="pub-authors">
+        <strong>Chengyue Wang</strong> , Bin Rao, Yanchen Guan, Jiaxun Zhang, Xingcheng Liu, Haicheng Liao, Zhenning Li
+      </div>
+      <div class="pub-venue">Communications in Transportation Research <strong>(COMMTR)</strong>, 2026</div>
+    </div>
+  </div> -->
+
+
+  <div class="pub-card">
+    <img class="pub-img" src="./img/TPAMI_2025_1.png" alt="TAPMI 2025" />
+    <div class="pub-details">
+      <div class="pub-title">
+        <a href="https://ieeexplore.ieee.org/document/10839301" target="_blank" rel="noopener">WAKE: Towards Robust and Physically Feasible Trajectory Prediction for Autonomous Vehicles with WAvelet and KinEmatics Synergy.</a>
+      </div>
+      <div class="pub-authors">
+        <strong>Chengyue Wang</strong>, Haicheng Liao, Zhenning Li, Chengzhong Xu
+      </div>
+      <div class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025</div>
+      <!-- <div class="pub-tagline">“Unleash the asymmetric heads of Hydra to tame the beast of fine-tuning!”</div>
+      <div class="pub-links"></div> -->
+    </div>
+  </div>
+
+  <div class="pub-card">
+    <img class="pub-img" src="./img/AAAI_2025_1.png" alt="AAAI 2025" />
+    <div class="pub-details">
+      <div class="pub-title">
+        <a href="https://ojs.aaai.org/index.php/AAAI/article/download/32064/34219" target="_blank" rel="noopener">NEST: A Neuromodulated Small-world Hypergraph Trajectory Prediction Model for Autonomous Driving.</a>
+        <!-- <span class="badge">Oral</span> -->
+      </div>
+      <div class="pub-authors">
+        <strong>Chengyue Wang</strong>, Haicheng Liao, Bonan Wang, Yanchen Guan, Bin Rao, Ziyuan Pu, Zhiyong Cui, Chengzhong Xu, Zhenning Li
+      </div>
+      <div class="pub-venue">AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2025 <span style="color: orangered;">Oral (600/12957 = 4.6%)</span></div>
+      <!-- <div class="pub-tagline">“Unleash the asymmetric heads of Hydra to tame the beast of fine-tuning!”</div>
+      <div class="pub-links"></div> -->
+    </div>
+  </div>
+
+  <div class="pub-card">
+    <img class="pub-img" src="./img/fusion_2025_1.png" alt="fusion 2025" />
+    <div class="pub-details">
+      <div class="pub-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S1566253524007024?casa_token=w35ksHxLFTkAAAAA:NuwNKGGnsBb6oMlLWS7cySZ1xrOpEZFFBRh_ebu8NZEJl6BAUPqP-4QPj6yYghVmPimbLy8PBg" target="_blank" rel="noopener">
+          DEMO: A Dynamics-Enhanced Learning Model for Multi-Horizon Trajectory Prediction in Autonomous Vehicles.
+        </a>
+      </div>
+      <div class="pub-authors">
+        <strong>Chengyue Wang</strong>, Haicheng Liao, Kaiqun Zhu, Guohui Zhang, Zhenning Li
+      </div>
+      <div class="pub-venue"><strong>Information Fusion</strong>, 2025</div>
+      <!-- <div class="pub-tagline">“Don’t play dice with clients; Rank and Imitate for the win!”</div> -->
+    </div>
+  </div>
+
+  <!-- <div class="pub-card">
+    <img class="pub-img" src="./img/TITS_2025_1.png" alt="TITS 2025" />
+    <div class="pub-details">
+      <div class="pub-title">
+        <a href="https://arxiv.org/abs/2502.20084" target="_blank" rel="noopener">
+          Minds on the Move: Decoding Trajectory Prediction in Autonomous Driving with Cognitive Insights.
+        </a>
+      </div>
+      <div class="pub-authors">
+        Haicheng Liao, <strong>Chengyue Wang</strong> (Co-first Author), Kaiqun Zhu, Yilong Ren, Bolin Gao, Shengbo Eben Li, Chengzhong Xu, Zhenning Li
+      </div>
+      <div class="pub-venue">IEEE Transactions on Intelligent Transportation Systems <strong>(TITS)</strong>, 2025</div>
+    </div>
+  </div> -->
+
+
+  <div class="pub-card">
+    <img class="pub-img" src="./img/aap_2024_1.png" alt="AAP 2024" />
+    <div class="pub-details">
+      <div class="pub-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S0001457523004931" target="_blank" rel="noopener">
+          Efficient and robust estimation of single-vehicle crash severity: A mixed logit model with heterogeneity in means and variances.
+        </a>
+      </div>
+      <div class="pub-authors">
+        Zhenning Li, <strong>Chengyue Wang</strong> (Co-first Author), Haicheng Liao, Guofa Li, Chengzhong Xu
+      </div>
+      <div class="pub-venue">Accident Analysis & Prevention <strong>(AAP)</strong>, 2024</div>
+    </div>
+  </div>
+
+
     </div>
 
-	<div class="container">
-		<div id="sidebar">
-            <img src="./img/avatar.jpg" vspace="30 px" width="250 px" id="me" itemprop="photo">
-        </div>
-		<div id="bio">
 
-            <!-- <br> -->
 
-			<h1>
-				<span itemprop="name">Chengyue Wang</span>
-			</h1>
 
+
+    <h2 id="awards">Selected Awards</h2>
+    <ul>
+      <li><strong>Doctoral Student Program of the Young S&T Talents Cultivation Project</strong>, China Association for Science and Technology, 2025 (<span style="color: orangered;">inaugural Hong Kong and Macau cohort; one of 46 awardees</span>)
             <br>
+            港澳地区<span style="color: orangered;">首届</span>中国科协青年科技人才培育工程博士生专项计划<br></li>
+      <li>Guangdong-Hong Kong-Macao Greater Bay Area Taihu Scholarship, 2025 (<span style="color: orangered;">one of 6 awardees in UM</span>)</li>
+      <li>Best Paper Award, The 25th COTA International Conference of Transportation Professionals (CICTP), 2025</li>
+      <li>Best Poster Award, The 5th Macao International Conference On Smart City Technologies, 2025</li>
+    </ul>
 
-			<p style="line-height:18px;">
-            <h2>PhD Student</h2>
-                <br>
-                <br>
-                <a href='https://skliotsc.um.edu.mo/'> State Key Laboratory of Internet of Things for Smart City</a>
-                <br>
-                <br>
-                <a href='https://www.um.edu.mo/'> University of Macau</a>
-                <br>
-                <br>
-                <a href='mailto: chengyue.wang@connect.um.edu.mo'> Email:</a> chengyue.wang AT connect.um.edu.mo
-                <br>
-			</p>
+    <h2 id="services">Professional Services</h2>
+    <ul>
+      <li><strong>Invited Journal Reviewer:</strong>
+        <span style="color:var(--text-body);">Nature Communications, TR Part C, Information Fusion, IEEE TCSVT, IEEE TITS ...</span>
+      </li>
+      <li><strong>Invited AI Conference Reviewer:</strong> CVPR, AAAI, ACM MM, ICRA, IJCAI ...</li>
+    </ul>
 
-            
+    <div class="footer-widget">
+<a href='https://mapmyvisitors.com/web/1c5nx'  title='Visit tracker'><img src='https://mapmyvisitors.com/map.png?cl=ffffff&w=a&t=tt&d=QyFi4WbwbM-sSZiPVW-DpJrZX-ZI6rgc3i9t0AZLed0'/></a>
+  </div>
 
-            <p class="external">
-                <a href="https://scholar.google.com/citations?hl=en&user=Fu1SRlwAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>
-                <a href="https://www.linkedin.com/in/chengyue-wang-67a458226/">Linkedin</a>
-            </p>
-		</div>
-	<!-- </div>
 
-	<div class="container"> -->
-    <br>
-		<h6>Short Bio</h6>
-		<p> 
-            I am currently a Ph.D. student at State Key Laboratory of Internet of Things for Smart City (SKL-IOTSC), University of Macau, advised by <a href='https://www.fst.um.edu.mo/personal/zhenningli/about/'>Prof. Zhenning Li.</a> 
-			Previously, I received my Bachelor's degree from Chang'an University and my Master's degree from the University of Illinois Urbana-Champaign (UIUC). 
-            Before joining UM, I was also fortunate to be mentored by <a href='https://superromanke.github.io/'>Prof. Ruimin Ke</a> and <a href='https://scholar.google.com/citations?user=8QbrSoQAAAAJ&hl=en'>Prof. Ruey (Kelvin) Cheu</a>.
-            <br>
-            <br>
-            My current research interests lie in Autonomous Driving, Embodied AI, and LLM. 
-            On these topics, I have published over 20 papers in top-tier journals such as <a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34'>IEEE TPAMI</a>, <a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979'>IEEE TITS</a>, 
-                as well as at leading AI conferences such as <a href='https://iccv.thecvf.com/'>ICCV</a>, <a href='https://aaai.org/'>AAAI</a>, with several selected for oral presentations.
-		</p>
-	<!-- </div>
-
- <div class="container"> -->
-
-  
 
     
+  </div>
 
+  <script>
+    // Back-to-top show/hide
+    const toTop = document.querySelector('.to-top');
+    const toggleToTop = () => {
+      if (window.scrollY > 500) toTop.classList.add('show');
+      else toTop.classList.remove('show');
+    };
+    window.addEventListener('scroll', toggleToTop, { passive: true });
+    toggleToTop();
 
-        <h6>Selected Publications</h6>
-        <br>
-        <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding:20px; vertical-align:middle;">
-              <div style="display: flex; align-items: center;">
-                <!-- 图片部分 -->
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='./img/TPAMI_2025_1.png' width="100%" style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-                </div>
-                <!-- 文字部分 -->
-                <div style="flex: 1;">
-                  <a href='https://ieeexplore.ieee.org/document/10839301' target='_blank'>WAKE: Towards Robust and Physically Feasible Trajectory Prediction for Autonomous Vehicles with WAvelet and KinEmatics Synergy</a>
-                  <br>
-                  <strong>Chengyue Wang</strong>, Haicheng Liao, Zhenning Li, Chengzhong Xu
-                  <br>
-                  IEEE Transactions on Pattern Analysis and Machine Intelligence <strong>(TPAMI)</strong>, 2025<br>
-                </div>
-              </div>
-            </td>
-          </tr>
+    // Publication category tabs
+    const pubTabs = document.querySelectorAll('.pub-tab');
+    const pubList = document.querySelector('.pub-list');
+    const pubCards = document.querySelectorAll('.pub-card[data-pub-category]');
+    const pubOrder = {
+      system: [
+        'CLONE: Customizing LLMs',
+        'HARMONY: Heterogeneity-Aware Hierarchical',
+        'Floe: Federated Specialization',
+        'Breaking the Memory Wall for Heterogeneous',
+        'FedHybrid: Breaking the Memory Wall'
+      ],
+      ml: [
+        'HydraLoRA: An Asymmetric LoRA',
+        'A Survey on Federated Fine-Tuning',
+        'Ranking-based Client Imitation Selection',
+        'FedGCS: A Generative Framework',
+        'Learn to Select: Efficient Cross-device'
+      ]
+    };
+    const getPubTitle = (card) => (card.querySelector('.pub-title')?.innerText || '').trim();
+    const getPubRank = (card) => {
+      const category = card.dataset.pubCategory;
+      const title = getPubTitle(card);
+      const order = pubOrder[category] || [];
+      const idx = order.findIndex((key) => title.includes(key));
+      return idx === -1 ? 999 : idx;
+    };
+    if (pubList) {
+      [...pubCards]
+        .sort((a, b) => {
+          const catCmp = a.dataset.pubCategory.localeCompare(b.dataset.pubCategory);
+          if (catCmp !== 0) return catCmp;
+          return getPubRank(a) - getPubRank(b);
+        })
+        .forEach((card) => pubList.appendChild(card));
+    }
+    const setPubFilter = (category) => {
+      pubTabs.forEach((tab) => {
+        const active = tab.dataset.pubFilter === category;
+        tab.classList.toggle('active', active);
+        tab.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      pubCards.forEach((card) => {
+        card.classList.toggle('is-hidden', card.dataset.pubCategory !== category);
+      });
+    };
+    pubTabs.forEach((tab) => {
+      tab.addEventListener('click', () => setPubFilter(tab.dataset.pubFilter));
+    });
+    setPubFilter('system');
 
-          <br>
-          <br>
-        
-          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding: 20px; vertical-align: middle;">
-              <div style="display: flex; align-items: center;">
-                <!-- 图片部分 -->
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='./img/AAAI_2025_1.png' width="100%" 
-                       style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-                </div>
-                <!-- 文字部分 -->
-                <div style="flex: 1;">
-                  <a href='https://arxiv.org/abs/2412.11682' target='_blank'>
-                    NEST: A Neuromodulated Small-world Hypergraph Trajectory Prediction Model for Autonomous Driving
-                  </a>
-                  <br>
-                  <strong>Chengyue Wang</strong>, Haicheng Liao, Bonan Wang, Yanchen Guan, Bin Rao, Ziyuan Pu, Zhiyong Cui, 
-                  Chengzhong Xu, Zhenning Li
-                  <br>
-                  AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2025 <span style="color: orangered;">Oral (600/12957 = 4.6%)</span><br>
-                 
-                </div>
-              </div>
-            </td>
-          </tr>
+    // News toggle
+    const newsToggle = document.getElementById('newsToggle');
+    const newsList = document.getElementById('newsList');
+    let newsExpanded = false;
+    newsToggle.addEventListener('click', () => {
+      newsExpanded = !newsExpanded;
+      newsList.querySelectorAll('.news-hidden').forEach(li => {
+        li.style.display = newsExpanded ? 'flex' : 'none';
+      });
+      newsToggle.textContent = newsExpanded ? 'Show less' : 'Show more';
+    });
+  </script>
 
-          <br>
-          <br> 
-
-
-          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding: 20px; vertical-align: middle;">
-              <div style="display: flex; align-items: center;">
-                <!-- 图片部分 -->
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='./img/fusion_2025_1.png' width="100%" 
-                       style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-                </div>
-                <!-- 文字部分 -->
-                <div style="flex: 1;">
-                    <a href='https://arxiv.org/abs/2412.20784' target='_blank'>DEMO: A Dynamics-Enhanced Learning Model for Multi-Horizon Trajectory Prediction in Autonomous Vehicles</a><br>
-                    <strong>Chengyue Wang</strong>, Haicheng Liao, Kaiqun Zhu, Guohui Zhang, Zhenning Li<br> 
-                    <strong>Information Fusion</strong>, 2025<br> 
-                </div>
-              </div>
-            </td>
-          </tr>  
-            
-          <br>
-          <br>
-
-
-
-          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding: 20px; vertical-align: middle;">
-              <div style="display: flex; align-items: center;">
-                <!-- 图片部分 -->
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='./img/TITS_2025_1.png' width="100%" 
-                       style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-                </div>
-                <!-- 文字部分 -->
-                <div style="flex: 1;">
-                <a href='https://arxiv.org/abs/2502.20084' target='_blank'>Minds on the Move: Decoding Trajectory Prediction in Autonomous Driving with Cognitive Insights</a> 
-                  <br>
-                  Haicheng Liao, <strong>Chengyue Wang</strong> (Co-first Author), Kaiqun Zhu, Yilong Ren, Bolin Gao, Shengbo Eben Li, Chengzhong Xu, Zhenning Li
-                  <br>
-                  IEEE Transactions on Intelligent Transportation Systems <strong>(TITS)</strong>, 2025 <br>
-                </div>
-              </div>
-            </td>
-          </tr>
-
-
-          <br>
-          <br>
-          
-          
-
-            
-          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding: 20px; vertical-align: middle;">
-              <div style="display: flex; align-items: center;">
-                <!-- 图片部分 -->
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='./img/aap_2024_1.png' width="100%" 
-                       style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-                </div>
-                <!-- 文字部分 -->
-                <div style="flex: 1;">
-                    <a href='https://www.sciencedirect.com/science/article/pii/S0001457523004931' target='_blank'>Efficient and robust estimation of single-vehicle crash severity: A mixed logit model with heterogeneity in means and variances</a><br>
-                    Zhenning Li, <strong>Chengyue Wang</strong> (Co-first Author), Haicheng Liao, Guofa Li, Chengzhong Xu<br>
-                    Accident Analysis & Prevention <strong>(AAP)</strong>, 2024<br>
-                </div>
-              </div>
-            </td>
-          </tr>  
-          
-          <br>
-          <br>    
-        
-          <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-            <td colspan="2" style="padding: 20px; vertical-align: middle;">
-              <div style="display: flex; align-items: center;">
-                <!-- 图片部分 -->
-                <div style="flex: 0 0 20%; padding-right: 20px;">
-                  <img src='./img/IJCAI_2024_1.png' width="100%" 
-                       style="box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4); border-radius: 10px;">
-                </div>
-                <!-- 文字部分 -->
-                <div style="flex: 1;">
-                    <a href='https://www.ijcai.org/proceedings/2024/0756.pdf' target='_blank'>Physics-Informed Trajectory Prediction for Autonomous Driving under Missing Observation</a> <br>
-                    Haicheng Liao, <strong>Chengyue Wang</strong> (Co-first Author), Zhenning Li, Yongkang Li, Bonan Wang, Guofa Li, Chengzhong Xu<br>
-                    International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2024 <br>
-                </div>
-              </div>
-            </td>
-          </tr>  
-<br>
-<br>
-<div style="width: 300px; margin: 0 auto; padding: 10px; background-color: #fff; border-radius: 10px;">
-   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=zNdtJipttWrEmXuQZhHsHRvxl5CioLwSoVFsGt7whSE&co=c5dff4&ct=000000&cmn=9ed17b&cmo=9ed17b'></script>
-</div>
-        
-    </div>
-
-
-<!--     <div class="clustrmaps-container">
-        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=zNdtJipttWrEmXuQZhHsHRvxl5CioLwSoVFsGt7whSE&co=c5dff4&ct=000000&cmn=9ed17b&cmo=9ed17b'></script>
-    </div> -->
-
-
-
-</body></html>
+</body>
+</html>
