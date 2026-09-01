@@ -112,7 +112,7 @@ div.menu-item {
 
 div#toptitle {
 	padding-bottom: 0.2em;
-	margin-bottom: 0.2em;
+	margin-bottom: 1.5em;
 	/*border-bottom: 3px double gray;*/
 }
 
@@ -460,3 +460,28 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+
+/* 添加到CSS文件中 */
+.clustrmaps-container {
+	display: flex;
+	justify-content: center; /* 水平居中 */
+	margin: 2rem 0; /* 上下间距 */
+	width: 100%;
+	max-width: 400px; /* 与图片宽度一致 */
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .clustrmaps-image {
+	width: 100%;
+	height: auto;
+	max-width: 400px; /* 保持原始比例 */
+	border-radius: 6px; /* 可选圆角 */
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* 柔和阴影 */
+	transition: transform 0.2s ease; /* 悬停效果 */
+  }
+  
+  .clustrmaps-image:hover {
+	transform: scale(1.02); /* 悬停放大 */
+  }
